@@ -1,0 +1,90 @@
+{
+  "visit_id": "98574",
+  "source_audio": "/home/ai/Workspace/Doha/Medical_voice_assistant/src/uploads/audio/98574.ogg",
+  "language": "ar",
+  "patient_name": "Ahmed Mohamed",
+  "patient_id": "88888",
+  "mode": "conversation",
+  "is_conversation": true,
+  "meta": {
+    "timings": {
+      "speech_to_text": 33.079533657990396,
+      "validation": 1.1317990240058862,
+      "refine_text": 2.0557597480365075,
+      "translation": 1.8024277500226162,
+      "feature_extraction": 4.7426165789947845,
+      "question_generation": 6.849381920997985,
+      "total": 49.661518680048175
+    },
+    "model": "whisper-v3",
+    "language": "ar",
+    "endpoint": "https://api.fireworks.ai/inference/v1/audio/transcriptions",
+    "status_code": 200
+  },
+  "raw_text": "كيف تشعر اليوم؟ القلم أكثر هنا في المصح حاولين يزداد أمور ويزيد بعد لك حاولين أمور الزبون وبعد لما تأكل تشعر أن القلم زاد شوية هل هناك أعراض أخرى مثل السخن أو الديارية أو عصب أبتداء لا تستطيع أن تأكل شعيبك محفولة نعم نحن نحن نحصل على عصب أبتداء شوية لكن لا يوجد حرارة أو أي شيء آخر سؤال يا أستاذ مصعب هل أخذت أي ميديكيشن او اكلت شيء قد تكون مخلص قبل ان تبدأ الاعراض هذه انا اكلت شابه من محل جديد واضعه صعبين من حصة الدكاء اه تمام احتمال هذا يكون بالفعل سبب المشكلة طيب هل اخذت اي نوع من انواع المساكنات لان احيانا المساكنات هذه ممكن تكون تسبب فرحة معدل جدا فهل اخذت مثلا شيء مثل الفولتورين مثل الكتافلام مثل البروفين كل هذا اخذت منه شيء لا اخذت اي اهلين او انت اكل حاجة على طول اشتركوا في القناة ",
+  "is_medical": true,
+  "classification": "MEDICAL",
+  "confidence": 90,
+  "refined_text": "الدكتور: كيف تشعر اليوم؟ هل الألم في معدتك ما زال موجودًا؟ هل يزداد بعد تناول الطعام؟\n المريض: نعم، عندما آكل أشعر أن الألم يزداد قليلاً.\n الدكتور: هل هناك أعراض أخرى مثل الحمى أو الإسهال أو ألم في البطن يمنعك من الأكل؟\n المريض: نعم، لدي ألم في البطن قليلاً، لكن لا يوجد حرارة أو أي شيء آخر.\n الدكتور: هل تناولت أي أدوية أو أكلت شيئًا غير معتاد قبل ظهور هذه الأعراض؟\n المريض: نعم، أكلت شاورما من محل جديد وكانت حارة جدًا.\n الدكتور: هذا قد يكون سبب المشكلة. هل تناولت أي مسكنات للألم؟ لأن بعض المسكنات قد تسبب تهيجًا في المعدة. هل تناولت شيئًا مثل الفولتارين أو الكتافلام أو البروفين؟\n المريض: لا، لم أتناول أي مسكنات.",
+  "translated_text": "Doctor: How are you feeling today? Is the pain in your stomach still there? Does it increase after eating?\nPatient: Yes, when I eat I feel the pain increases a little.\nDoctor: Are there any other symptoms like fever, diarrhea, or abdominal pain that prevents you from eating?\nPatient: Yes, I have a little abdominal pain, but no fever or anything else.\nDoctor: Did you take any medications or eat something unusual before these symptoms appeared?\nPatient: Yes, I ate shawarma from a new place and it was very spicy.\nDoctor: That could be the cause of the problem. Did you take any painkillers? Because some painkillers may cause stomach irritation. Did you take anything like Voltaren, Cataflam, or Brufen?\nPatient: No, I didn't take any painkillers.",
+  "json_data": {
+    "chief_complaint": "Stomach pain that increases after eating",
+    "icd10_codes": [
+      "R10.9 - Unspecified abdominal pain",
+      "K30 - Functional dyspepsia"
+    ],
+    "history_of_illness": "Patient ate spicy shawarma from a new place before symptoms appeared",
+    "current_medication": "No current medication",
+    "imaging_results": "",
+    "plan": "Avoid spicy food",
+    "assessment": "The pain is likely caused by eating spicy food",
+    "follow_up": "",
+    "conversation_summary": "Patient presented with stomach pain that worsens after eating. The pain is associated with eating spicy shawarma. No fever or other severe symptoms were reported. The doctor advised avoiding spicy food."
+  },
+  "extraction_reasoning": "The chief complaint was identified from the patient's description of their symptoms. The history of illness was gathered from the patient's account of eating spicy shawarma before the symptoms started. The doctor's assessment and plan were derived from their conversation with the patient. ICD-10 codes were selected based on the symptoms described (abdominal pain and possible functional dyspepsia due to spicy food).",
+  "questions": [
+    {
+      "question": "How long have you been experiencing stomach pain?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "chief_complaint"
+    },
+    {
+      "question": "Does the pain radiate to your back or other areas?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "history"
+    },
+    {
+      "question": "Have you experienced any nausea or vomiting?",
+      "answer": "No",
+      "needs_asking": false,
+      "category": "history"
+    },
+    {
+      "question": "Have you taken any medications recently, such as antacids or acid reducers?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "medications"
+    },
+    {
+      "question": "Do you have any known allergies to food or medications?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "allergies"
+    },
+    {
+      "question": "Have you noticed any changes in your bowel movements?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "history"
+    },
+    {
+      "question": "What is your current pain level on a scale of 1 to 10?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "assessment"
+    }
+  ],
+  "reasoning": "The conversation revolves around gastrointestinal symptoms, likely related to food consumption. The doctor explored the relation between eating and pain, as well as potential irritants like spicy food. However, several important aspects such as pain duration, radiation, and medication use remain unaddressed."
+}

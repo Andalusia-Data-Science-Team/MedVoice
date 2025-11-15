@@ -1,0 +1,117 @@
+{
+  "visit_id": "10245",
+  "source_audio": "/home/ai/Workspace/Doha/Medical_voice_assistant/src/uploads/audio/10245.ogg",
+  "language": "en",
+  "patient_name": "no name",
+  "patient_id": "no id",
+  "mode": "doctor",
+  "is_conversation": false,
+  "meta": {
+    "timings": {
+      "speech_to_text": 16.005698532098904,
+      "validation": 0.9810628370614722,
+      "refine_text": 1.2710931570036337,
+      "feature_extraction": 2.8067386749899015,
+      "question_generation": 5.084995759068988,
+      "total": 26.1495889602229
+    },
+    "model": "whisper-v3",
+    "language": "en",
+    "endpoint": "https://api.fireworks.ai/inference/v1/audio/transcriptions",
+    "status_code": 200
+  },
+  "raw_text": "The patient is complaining of persistent lower back pain that has been ongoing for the past three weeks. The pain is described as dull, aching, occasionally radiating to the left leg and is aggravated by prolonged sitting or heavy lifting. The patient denies any recent trauma, weakness, numbness, or loss of bladder or bowel control. On examination, there is a mild tenderness over the lumbar spine and limited range of motion during flexion. ",
+  "is_medical": true,
+  "classification": "MEDICAL",
+  "confidence": 95,
+  "refined_text": "The patient reports persistent lower back pain for the past three weeks, characterized as a dull ache that occasionally radiates to the left leg. Symptoms worsen with prolonged sitting or heavy lifting. The patient denies recent trauma, neurological deficits, or bowel/bladder dysfunction. Physical examination reveals mild lumbar spine tenderness and restricted flexion range of motion.",
+  "translated_text": "The patient reports persistent lower back pain for the past three weeks, characterized as a dull ache that occasionally radiates to the left leg. Symptoms worsen with prolonged sitting or heavy lifting. The patient denies recent trauma, neurological deficits, or bowel/bladder dysfunction. Physical examination reveals mild lumbar spine tenderness and restricted flexion range of motion.",
+  "json_data": {
+    "chief_complaint": "persistent lower back pain for the past three weeks",
+    "icd10_codes": [
+      "M54.5 - Low back pain"
+    ],
+    "history_of_illness": "The patient denies recent trauma, neurological deficits, or bowel/bladder dysfunction.",
+    "current_medication": "",
+    "imaging_results": "",
+    "plan": "",
+    "assessment": "Lower back pain likely due to musculoskeletal strain.",
+    "follow_up": ""
+  },
+  "extraction_reasoning": "The patient presents with lower back pain, a common condition. The ICD-10 code M54.5 is appropriate for low back pain. The history of illness is noted, including the absence of trauma or neurological symptoms. No current medications are mentioned. Imaging results and a specific plan are not provided. The assessment is based on physical examination findings, suggesting musculoskeletal strain. Follow-up is not specified.",
+  "questions": [
+    {
+      "question": "How long has the patient been experiencing lower back pain?",
+      "answer": "The past three weeks.",
+      "needs_asking": false,
+      "category": "chief_complaint"
+    },
+    {
+      "question": "Can you describe the nature of the lower back pain?",
+      "answer": "A dull ache that occasionally radiates to the left leg.",
+      "needs_asking": false,
+      "category": "chief_complaint"
+    },
+    {
+      "question": "What activities exacerbate the lower back pain?",
+      "answer": "Prolonged sitting or heavy lifting.",
+      "needs_asking": false,
+      "category": "history"
+    },
+    {
+      "question": "Has the patient experienced any recent trauma?",
+      "answer": "No recent trauma.",
+      "needs_asking": false,
+      "category": "history"
+    },
+    {
+      "question": "Are there any neurological deficits or bowel/bladder dysfunction?",
+      "answer": "The patient denies neurological deficits or bowel/bladder dysfunction.",
+      "needs_asking": false,
+      "category": "history"
+    },
+    {
+      "question": "What were the findings on physical examination of the lumbar spine?",
+      "answer": "Mild lumbar spine tenderness and restricted flexion range of motion.",
+      "needs_asking": false,
+      "category": "physical_exam"
+    },
+    {
+      "question": "Is the patient currently taking any medications for the lower back pain?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "medications"
+    },
+    {
+      "question": "Does the patient have any known drug allergies?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "allergies"
+    },
+    {
+      "question": "What are the patient's vital signs?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "vital_signs"
+    },
+    {
+      "question": "Has the patient had any previous episodes of lower back pain?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "history"
+    },
+    {
+      "question": "What is the suspected diagnosis for the patient's condition?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "assessment"
+    },
+    {
+      "question": "What is the planned management or treatment for the lower back pain?",
+      "answer": null,
+      "needs_asking": true,
+      "category": "plan"
+    }
+  ],
+  "reasoning": "The dictation focuses on lower back pain, its characteristics, and physical findings. The generated questions cover the chief complaint, history, physical examination, medications, allergies, vital signs, assessment, and planned management to ensure a comprehensive evaluation."
+}
