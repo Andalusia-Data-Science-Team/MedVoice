@@ -139,4 +139,4 @@ async def process_via_upload_stream(
 
 
 if __name__ == "__main__":
-    uvicorn.run("fastapi_app:app", host="0.0.0.0", port=9999)
+    uvicorn.run("fastapi_app:app", host="0.0.0.0", port=2222)

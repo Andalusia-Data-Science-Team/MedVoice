@@ -107,17 +107,17 @@ class AudioPreprocessingService:
     @staticmethod
     def convert_to_optimal_format(input_file_path, target_sr=16000):
         """
-        Convert audio to an optimal format for voxtral (16kHz mono WAV).
+        Convert audio to an optimal format for Whisper (16kHz mono WAV).
         
         Args:
             input_file_path: Path to the input audio file
-            target_sr: Target sample rate (voxtral works best with 16kHz)
+            target_sr: Target sample rate (Whisper works best with 16kHz)
             
         Returns:
             Path to the converted audio file
         """
         temp_dir = tempfile.mkdtemp()
-        output_file_path = os.path.join(temp_dir, "voxtral_optimized.wav")
+        output_file_path = os.path.join(temp_dir, "whisper_optimized.wav")
         
         try:
             # Load audio
@@ -127,7 +127,7 @@ class AudioPreprocessingService:
             if sr != target_sr:
                 y = librosa.resample(y, orig_sr=sr, target_sr=target_sr)
             
-            # Save as 16-bit PCM WAV (optimal for voxtral)
+            # Save as 16-bit PCM WAV (optimal for Whisper)
             sf.write(output_file_path, y, target_sr, subtype='PCM_16')
             
             return output_file_path
